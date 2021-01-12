@@ -6,14 +6,14 @@ There are several ways to deploy Docker containers from jenkins pipeline. The me
 
 This is an example of how to add a Docker client to the official Jenkins Docker image to make the Jenkins pipeline able to deploy a containerized application to the same host Docker engine. You need to have up and running Docker on your host.
 
-In this example I use official Jenkins lts image on alpine pulled from Dockerhub.
+In this example I use official Jenkins lts image on alpine pulled from dockerhub.
 
 ```
 pull jenkins/jenkins:2.263.1-lts-alpine
 ```
 
 
-Or just clone this repo and run Docker build command.
+Or just clone this repo and run docker build command.
 
 ```
 docker build -t ehrnjic/jenkins-alp-dcli:0.1 .
