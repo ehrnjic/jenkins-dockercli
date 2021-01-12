@@ -34,10 +34,10 @@ docker run -d --rm \
 To test whether the Docker client has access to host Docker daemon you can execute this command:
 
 ```
-docker exec -it jenkins Docker version
+docker exec -it jenkins docker version
 ```
 
-In some cases, if you got permission denied while Docker client trying to connect to the Docker daemon socket at unix:///var/run/Docker.sock, you need to allow access to Docker daemon socket on host. This is not safe but it is the simplest way. Just give rw access to socket for others.
+In some cases, if you got permission denied while Docker client trying to connect to the Docker daemon socket at unix:///var/run/docker.sock, you need to allow access to Docker daemon socket on host. This is not safe but it is the simplest way, just give rw access to socket for others.
 
 ```
 sudo chmod o+rw /var/run/docker.sock
