@@ -9,7 +9,7 @@ This is an example of how to add a Docker client to the official Jenkins Docker 
 In this example I use official Jenkins lts image on alpine pulled from dockerhub.
 
 ```
-pull jenkins/jenkins:2.263.1-lts-alpine
+docker pull jenkins/jenkins:2.263.1-lts-alpine
 ```
 
 
